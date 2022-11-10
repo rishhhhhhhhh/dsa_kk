@@ -1,4 +1,4 @@
-package firstjavaprogram_ep8;
+package com.first_java_program;
 
 //Write a program to print whether a number is even or odd, also take
 //input from the user.

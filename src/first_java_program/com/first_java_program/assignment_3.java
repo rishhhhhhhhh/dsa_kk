@@ -1,4 +1,4 @@
-package firstjavaprogram_ep8;
+package com.first_java_program;
 
 import java.util.Scanner;
 
