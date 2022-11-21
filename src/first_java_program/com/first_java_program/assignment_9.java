@@ -2,6 +2,7 @@ package com.first_java_program;
 
 import java.util.Scanner;
 
+
 public class assignment_9 {
     public static void main(String[] args) {
         int num1, num2;
@@ -23,10 +24,13 @@ public class assignment_9 {
             System.out.println(""+i+" is an Armstrong number.");
             sc.close();
             }
-              
+            
+               
             }
-         }
-      }
-   
-
+               
+            }
+               
+              }
+               
+              
 
