@@ -1,4 +1,4 @@
-package com;
+package com.first_java_program;
 
 public class floor {
     public static void main(String[] args) {
