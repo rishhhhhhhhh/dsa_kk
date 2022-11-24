@@ -1,4 +1,4 @@
-package com.first_java_program;
+package leetcode;
 
 public class medium_852 {
     public static void main(String[] args) {

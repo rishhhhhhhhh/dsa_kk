@@ -1,4 +1,4 @@
-package com.first_java_program;
+package leetcode;
 
 public class easy_1812 {
     public static void main(String[] args) {
