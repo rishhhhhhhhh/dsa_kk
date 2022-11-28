@@ -1,4 +1,4 @@
-package com.first_java_program;
+package binarysearch;
 
 public class binarysearch {
     public static void main(String[] args) {
