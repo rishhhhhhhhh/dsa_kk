@@ -1,6 +1,5 @@
 package mathsfordsa;
 
-import java.lang.ref.Cleaner;
 
 public class sqrt {
     public static void main(String[] args) {
