@@ -1,4 +1,4 @@
-package mathsindsa;
+package mathsfordsa;
 
 
 public class numberofdigits {
