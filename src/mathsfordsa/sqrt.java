@@ -6,7 +6,7 @@ public class sqrt {
         int n = 25;
         int start = 0;
         int end = n;
-        int root=0;
+        int ans=0;
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
