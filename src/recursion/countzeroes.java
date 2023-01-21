@@ -1,7 +1,6 @@
 package recursion;
 
-public class countzeroes {
-
+public class countzeroes { 
     public static void main(String[] args) {
         System.out.println(countz(12010));
     }
