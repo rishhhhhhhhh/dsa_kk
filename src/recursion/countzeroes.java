@@ -3,10 +3,13 @@ package recursion;
 public class countzeroes {
 
     public static void main(String[] args) {
-        System.out.println(countz(1000));
+        System.out.println(countz(12010));
     }
 
     static int countz(int n) {
+        if(n==0){
+            return 1;
+        }
         return count(n, 0);
     }
 
