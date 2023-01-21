@@ -4,6 +4,7 @@ public class reverse {
     
     public static void main(String[] args) {
         System.out.println(rev1(1234));
+        System.out.println(palin(45654));
        
     }
       
@@ -29,6 +30,10 @@ public class reverse {
         }
         int rem = n % 10;
         return rem * (int)(Math.pow(10, digits-1)) + helper(n/10, digits-1);
+    }
+
+    static boolean palin(int n) {
+        return n == rev1(n);
     }
 
     
