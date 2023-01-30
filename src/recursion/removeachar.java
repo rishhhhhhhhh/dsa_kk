@@ -4,6 +4,8 @@ public class removeachar {
     public static void main(String[] args) {
         skip("", "bccbcbcaadss");
         System.out.println(skip("abbcaab"));
+        System.out.println(skipword("bcappleseb"));
+        System.out.println(skipAppNotApple("bbcappleappbbcidu"));
     }
 
     static void skip(String p, String up){
@@ -32,6 +34,28 @@ static String skip(String up) {
         return ch + skip(up.substring(1));
     }
 }
+
+static String skipword(String up) {
+        if (up.isEmpty()) {
+            return "";
+        }
+        if (up.startsWith("apple")) {
+            return skipword(up.substring(5));
+        } else {
+            return up.charAt(0) + skipword(up.substring(1));
+        }
+    }
+
+    static String skipAppNotApple(String up) {
+        if (up.isEmpty()) {
+            return "";
+        }
+        if (up.startsWith("app") && !up.startsWith("apple")) {
+            return skipAppNotApple(up.substring(3));
+        } else {
+            return up.charAt(0) + skipAppNotApple(up.substring(1));
+        }
+    }
 }
 
     
