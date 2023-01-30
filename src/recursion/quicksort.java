@@ -6,6 +6,9 @@ public class quicksort {
         int[] arr = {16,15,14,13,12,11};
         sort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
+
+      
+        
     }
 
     static void sort(int[] num, int low, int hi) {
