@@ -6,7 +6,7 @@ public class permutation {
     public static void main(String[] args) {
        permutations("", "abcd");
        ArrayList<String> ans = permutationsAL("", "abcd");
-      System.out.println(ans);
+       System.out.println(ans);
        System.out.println(permutationscount("", "abcde"));
     }
 
