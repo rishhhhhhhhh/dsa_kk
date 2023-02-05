@@ -1,23 +1,46 @@
 package leetcode;
 
 import java.util.ArrayList;
-
 public class medium_17 {
     public static void main(String[] args) {
-        System.out.println(lettercomb("", "12"));
+        System.out.println(telephone("", "23"));
     }
-    static ArrayList<String> lettercomb(String p, String up) {
-        if (up.isEmpty()) {
-            ArrayList<String> list = new ArrayList<>();
-            list.add(p);
+    public ArrayList<String> letterCombinations(String digits) {
+        ArrayList<String> list = new ArrayList<>();
+        if(digits.isEmpty()){
             return list;
         }
-        int digit = up.charAt(0) - '0';
+    return telephone("",digits);
+    }
+
+    public static ArrayList<String> telephone(String ans,String up){
         ArrayList<String> list = new ArrayList<>();
-        for (int i = (digit - 1) * 3; i < digit * 3; i++) {
-            char ch = (char) ('a' + i);
-            list.addAll(lettercomb(p + ch, up.substring(1)));
+        if(up.isEmpty()){
+            ArrayList<String> list1 = new ArrayList<>();
+            list1.add(ans);
+            return list1;
         }
+        int digit = up.charAt(0) - '0';
+        if(digit == 7){
+            for(int i= (digit-2)*3;i<=(digit-1)*3;i++){
+            char ch = (char)('a'+i);
+            list.addAll(telephone(ans+ch, up.substring(1)));
+        }}else if(digit==8){
+            for(int i= 19;i<=21;i++){
+            char ch = (char)('a'+i);
+            list.addAll(telephone(ans+ch, up.substring(1)));}
+        }else if(digit == 9){
+            for(int i= 22;i<=25;i++){
+            char ch = (char)('a'+i);
+            list.addAll(telephone(ans+ch, up.substring(1)));
+        }
+        }else{
+             for(int i= (digit-2)*3;i<(digit-1)*3;i++){
+            char ch = (char)('a'+i);
+            list.addAll(telephone(ans+ch, up.substring(1)));
+        }
+        }
+        
         return list;
     }
 }
