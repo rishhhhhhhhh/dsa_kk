@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class stringseq {
     public static void main(String[] args) {
-        sequence("", "abcd");
+        //sequence("", "abcd");
         System.out.println(sequence2("", "abc"));
-        ascii("", "abcd");
-        System.out.println(ascii2("", "abc"));
+        //ascii("", "abcd");
+        //System.out.println(ascii2("", "abc"));
 
     }
 
