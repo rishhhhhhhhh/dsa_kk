@@ -1,8 +1,8 @@
-package leetcode;
+package recursion;
 
 import java.util.ArrayList;
 
-public class medium_17 {
+public class lettercombb {
     public static void main(String[] args) {
         System.out.println(lettercomb("", "12"));
     }
