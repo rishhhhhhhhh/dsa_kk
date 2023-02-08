@@ -42,5 +42,7 @@ class Main
             s1.setCharAt(i , temp) ;
         }
         System.out.println(s1) ;
+        sc.close();
 	}
+   
 }
