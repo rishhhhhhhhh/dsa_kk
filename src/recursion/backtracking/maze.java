@@ -1,7 +1,7 @@
 package recursion.backtracking;
 import java.util.ArrayList;
 
-public class arr {
+public class maze {
     public static void main(String[] args) {
         System.out.println(count(3, 3));
         mazepath("", 3, 3);
