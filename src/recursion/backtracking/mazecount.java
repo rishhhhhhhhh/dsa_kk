@@ -1,8 +1,11 @@
 package recursion.backtracking;
+import java.util.ArrayList;
 
 public class mazecount {
     public static void main(String[] args) {
         System.out.println(count(3, 3));
+        mazepath("", 3, 3);
+        System.out.println(mazepathAL("", 3, 3));
     }
 
     static int count(int row, int column) {
@@ -11,4 +14,36 @@ public class mazecount {
         }
         return count(row-1, column)+count(row, column-1);
     }
+
+    static void mazepath(String ans, int row, int column) {
+        if (row == 1 && column == 1) {
+            System.out.println(ans);
+            return;
+        }
+        if (column > 1) {
+            mazepath(ans + 'R', row, column-1);  
+        }
+        if (row > 1) {
+            mazepath(ans + 'D', row-1, column);
+        
+        }
+
+    }
+
+    static ArrayList<String> mazepathAL(String ans, int row, int column) {
+        if (row == 1 && column == 1) {
+            ArrayList<String> list = new ArrayList<>();
+            list.add(ans);
+            return list;
+        }
+        ArrayList<String> list = new ArrayList<>();        
+        if (column > 1) {
+            list.addAll(mazepathAL(ans + 'R', row, column-1));
+        }
+        if (row > 1) {
+            list.addAll(mazepathAL(ans + 'D', row-1, column));
+        }
+        return list;
+    }
 }
+
