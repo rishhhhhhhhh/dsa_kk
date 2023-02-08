@@ -1,13 +1,16 @@
 package recursion.backtracking;
 import java.util.ArrayList;
 
-public class maze {
+public class arr {
     public static void main(String[] args) {
         System.out.println(count(3, 3));
         mazepath("", 3, 3);
         System.out.println(mazepathAL("", 3, 3));
         System.out.println(mazepathdiag("", 3, 3));
-
+        boolean[][] arr = {{true, false, true},
+                           {true, false, true},
+                           {true, true, true}};
+    pathobstacle("", arr, 0, 0);
     }
 
     static int count(int row, int column) {
@@ -65,6 +68,22 @@ public class maze {
             list.addAll(mazepathdiag(ans + 'D', row-1, column));
         }
         return list;
+    }
+
+    static void pathobstacle(String ans, boolean[][] arr, int row, int column) {
+        if (row == arr.length - 1 && column == arr[0].length - 1) {
+            System.out.println(ans);
+            return;
+        }
+        if (arr[row][column]==false) {
+            return;
+        }
+        if (row < arr.length - 1) {
+            pathobstacle(ans + 'D', arr, row+1, column);
+        }
+        if (column < arr[0].length - 1) {
+            pathobstacle(ans + 'R', arr, row, column+1);
+        }
     }
 }
 
