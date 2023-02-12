@@ -2,11 +2,10 @@ package recursion.backtracking;
 
 public class Nqueens {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 6;
         boolean[][] chess = new boolean[n][n];
         System.out.println(queens(chess, 0)); 
-    }
-    
+    }    
     static int queens(boolean[][] chess, int row) {
         if (row == chess.length) {
             display(chess);
@@ -42,15 +41,12 @@ public class Nqueens {
                 return false;
             }
         }
-        
-
         return true;
     }
-
     private static void display(boolean[][] chess) {
         for(boolean[] row : chess) {
             for(boolean element : row) {
-                if (element) {
+                if (element==true) {
                     System.out.print("Q ");
                 } else {
                     System.out.print("X ");
