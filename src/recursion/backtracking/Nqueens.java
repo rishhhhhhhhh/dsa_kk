@@ -2,7 +2,7 @@ package recursion.backtracking;
 
 public class Nqueens {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 11;
         boolean[][] chess = new boolean[n][n];
         System.out.println(queens(chess, 0)); 
     }    
