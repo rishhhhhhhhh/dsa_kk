@@ -1,4 +1,4 @@
-package leetcode;
+package easy;
 
 public class easy_645 {
     public int[] findErrorNums(int[] arr) {

@@ -1,4 +1,4 @@
-package leetcode;
+package easy;
 public class easy_832 {
     public int[][] flipAndInvertImage(int[][] image) {
         for(int[] row : image) {

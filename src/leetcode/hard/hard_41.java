@@ -1,4 +1,4 @@
-package leetcode;
+package hard;
 
 public class hard_41 {
     public static int firstMissingPositive(int[] arr) {

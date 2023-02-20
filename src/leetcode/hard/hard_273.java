@@ -1,4 +1,4 @@
-package leetcode;
+package hard;
 
 
 public class hard_273 {

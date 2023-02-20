@@ -1,4 +1,4 @@
-package leetcode;
+package hard;
 public class hard_37 {
         public static void solveSudoku(char[][] board) {
              solve(board);

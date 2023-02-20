@@ -1,4 +1,4 @@
-package leetcode;
+package easy;
 
 public class easy_1523{
 public int countOdds(int low, int high) {
