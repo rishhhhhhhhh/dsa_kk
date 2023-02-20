@@ -1,5 +1,8 @@
 package hard;
 public class hard_37 {
+    public static void main(String[] args) {
+        
+    }
         public static void solveSudoku(char[][] board) {
              solve(board);
          }
