@@ -2,10 +2,12 @@ package medium;
 
 public class medium_852 {
     public static void main(String[] args) {
+        int[] arr={1,2,3,4,5,4,3,2,1};
+        System.out.println(peakIndexInMountainArray(arr));
 
     }
    
-    public int peakIndexInMountainArray(int[] arr) {
+    public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 
