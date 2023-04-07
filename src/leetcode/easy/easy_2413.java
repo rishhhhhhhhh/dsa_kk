@@ -1,4 +1,4 @@
-package easy.easy;
+package easy;
 
 public class easy_2413 {
     public static void main(String[] args) {
