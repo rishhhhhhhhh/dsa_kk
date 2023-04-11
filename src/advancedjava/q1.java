@@ -28,7 +28,7 @@ class Person implements java.io.Serializable {
 class Program5 {
     public static void main(String[] args) {
         Person person = new Person();
-        person.setName("Jeon jungkook");
+        person.setName("Jeon Jungkook");
         person.setAge(20);
 
         System.out.println("Name: " + person.getName());
