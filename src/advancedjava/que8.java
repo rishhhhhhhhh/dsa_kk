@@ -1,6 +1,6 @@
 package advancedjava;
 
-public interface Queue<T> {
+interface Queue<T> {
     void enqueue(T item);
     T dequeue();
     T peek();
