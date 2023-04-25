@@ -1,4 +1,4 @@
-package easy;
+package leetcode.easy;
 
 public class easy_67{
     public static void main(String[] args) {

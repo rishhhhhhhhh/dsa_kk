@@ -1,4 +1,4 @@
-package easy;
+package leetcode.easy;
 public class easy_69 {
     public static void main(String[] args) {
         System.out.println(mySqrt(25));
