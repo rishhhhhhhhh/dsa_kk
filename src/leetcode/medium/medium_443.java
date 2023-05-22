@@ -1,4 +1,4 @@
-package medium;
+
 
 public class medium_443 {
     public static void main(String[] args) {
