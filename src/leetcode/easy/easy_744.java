@@ -1,11 +1,10 @@
-package leetcode.easy;
-
 public class easy_744 {
            public static void main(String[] args) {
-            
+              char[] letters={'a','b','c', 'd'};
+              System.out.println(nextGreatestLetter(letters, 'b'));
            }
     
-        public char nextGreatestLetter(char[] letters, char target) {
+        public static char nextGreatestLetter(char[] letters, char target) {
             
             int start=0;
             int end=letters.length-1;
