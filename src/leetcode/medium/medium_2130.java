@@ -1,3 +1,5 @@
+package leetcode.medium;
+
 //Definition for singly-linked list.
 class ListNode {
   int val;

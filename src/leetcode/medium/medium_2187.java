@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 public class medium_2187 {
     public static void main(String[] args) {
