@@ -102,6 +102,16 @@ class LinkedList {
         }
     }
 
+    int length() {
+        int count = 0;
+        Node current = head;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
     void display() {
         if (head == null) {
             System.out.println("Linked list is empty.");
@@ -130,8 +140,9 @@ public class SinglyLinkedList {
             System.out.println("3. Delete from the beginning");
             System.out.println("4. Delete from the end");
             System.out.println("5. Insert at a specific position");
-            System.out.println("6. Display the linked list");
-            System.out.println("7. Exit");
+            System.out.println("6. Calculate the length of the linked list");
+            System.out.println("7. Display the linked list");
+            System.out.println("8. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
 
@@ -160,15 +171,19 @@ public class SinglyLinkedList {
                     list.insertAtPosition(data, position);
                     break;
                 case 6:
-                    list.display();
+                    int length = list.length();
+                    System.out.println("Length of the linked list: " + length);
                     break;
                 case 7:
+                    list.display();
+                    break;
+                case 8:
                     System.out.println("Exiting the program...");
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-        } while (choice != 7);
+        } while (choice != 8);
 
         scanner.close();
     }

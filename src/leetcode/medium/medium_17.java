@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 import java.util.ArrayList;
 public class medium_17 {
