@@ -6,13 +6,13 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.beans.*;
 
-public class Que13 extends java.awt.Panel {
+public class que13 extends java.awt.Panel {
     
     private Color bgColor = Color.WHITE;
     private Color fgColor = Color.BLACK;
     private int size = 50;
     
-    public Que13() {
+    public que13() {
         setPreferredSize(new java.awt.Dimension(size, size));
     }
     
@@ -48,7 +48,7 @@ public class Que13 extends java.awt.Panel {
         repaint();
     }
     
-    public Dimension getSize() {
+    public int getSize() {
         return size;
     }
     
@@ -56,11 +56,11 @@ public class Que13 extends java.awt.Panel {
         
         public PropertyDescriptor[] getPropertyDescriptors() {
             try {
-                PropertyDescriptor bgColor = new PropertyDescriptor("backgroundColor", Que13.class);
+                PropertyDescriptor bgColor = new PropertyDescriptor("backgroundColor", que13.class);
                 bgColor.setDisplayName("Background Color");
-                PropertyDescriptor fgColor = new PropertyDescriptor("foregroundColor", Que13.class);
+                PropertyDescriptor fgColor = new PropertyDescriptor("foregroundColor", que13.class);
                 fgColor.setDisplayName("Foreground Color");
-                PropertyDescriptor size = new PropertyDescriptor("size", Que13.class);
+                PropertyDescriptor size = new PropertyDescriptor("size", que13.class);
                 size.setDisplayName("Size");
                 return new PropertyDescriptor[] { bgColor, fgColor, size };
             } catch (IntrospectionException e) {

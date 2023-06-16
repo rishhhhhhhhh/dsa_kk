@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.beans.*;
 
-public class Que14 {
+public class que14 {
 
     // Bean Properties
     private String message = "Hello World!";
@@ -50,10 +50,10 @@ public class Que14 {
         @Override
         public PropertyDescriptor[] getPropertyDescriptors() {
             try {
-                PropertyDescriptor messageProp = new PropertyDescriptor("message", Que14.class);
-                PropertyDescriptor bgProp = new PropertyDescriptor("backgroundColor", Que14.class);
-                PropertyDescriptor fgProp = new PropertyDescriptor("foregroundColor", Que14.class);
-                PropertyDescriptor sizeProp = new PropertyDescriptor("fontSize", Que14.class);
+                PropertyDescriptor messageProp = new PropertyDescriptor("message", que14.class);
+                PropertyDescriptor bgProp = new PropertyDescriptor("backgroundColor", que14.class);
+                PropertyDescriptor fgProp = new PropertyDescriptor("foregroundColor", que14.class);
+                PropertyDescriptor sizeProp = new PropertyDescriptor("fontSize", que14.class);
                 return new PropertyDescriptor[]{messageProp, bgProp, fgProp, sizeProp};
             } catch (IntrospectionException e) {
                 e.printStackTrace();
