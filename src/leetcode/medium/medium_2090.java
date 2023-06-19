@@ -3,6 +3,7 @@ import java.util.Arrays;
 class Solution {
     public int[] getAverages(int[] nums, int k) {
         int n = nums.length;
+        int[] nums={1,2,3};
         int [] ans = new int[n];
         Arrays.fill(ans, -1);
         
