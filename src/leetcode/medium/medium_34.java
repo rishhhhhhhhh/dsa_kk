@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-public class medium34{
+public class medium_34{
     public static void main(String[] args) {
         
     }
