@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int longestArithSeqLength(int[] nums) {
         int n = nums.length;
