@@ -1,4 +1,5 @@
-class T {
+class T 
+{
     public int i;
     public int j;
     public int keys; // keys in bitmask
