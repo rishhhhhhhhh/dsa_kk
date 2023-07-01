@@ -1,5 +1,3 @@
-package placementtraining;
-
 public class stackArray {
     private int maxSize; 
     private int top;    

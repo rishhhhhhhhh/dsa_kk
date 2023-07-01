@@ -1,4 +1,3 @@
-package placementtraining;
 
 public class ExcelColumnTitle {
      public static void main(String[] args) {

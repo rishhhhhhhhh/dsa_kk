@@ -1,6 +1,4 @@
-package placementtraining;
 import static java.lang.System.exit;
-
 
 class LinkedListStack {
 	public static void main(String[] args)
@@ -21,8 +19,7 @@ class LinkedListStack {
 
 class StackUsingLinkedlist {
 
-
-	private class Node {
+private class Node {
 
 		int data; 
 		Node link; 

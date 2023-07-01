@@ -1,4 +1,3 @@
-package placementtraining;
 
 public class specialnumber {
     public static void main(String[] args) {

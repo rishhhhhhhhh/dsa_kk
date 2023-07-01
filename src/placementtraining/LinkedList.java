@@ -1,4 +1,3 @@
-package placementtraining;
 
 public class LinkedList {
     

@@ -1,5 +1,3 @@
-package placementtraining;
-
 import java.util.Stack;
 
 public class InfixToPostfix {

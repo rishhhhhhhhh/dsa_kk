@@ -1,4 +1,3 @@
-package placementtraining;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package placementtraining;
+
 
 import java.util.Arrays;
 
