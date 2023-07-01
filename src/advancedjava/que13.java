@@ -10,7 +10,7 @@ public class que13 extends java.awt.Panel {
     
     private Color bgColor = Color.WHITE;
     private Color fgColor = Color.BLACK;
-    private int size = 50;
+    int size = 50;
     
     public que13() {
         setPreferredSize(new java.awt.Dimension(size, size));
