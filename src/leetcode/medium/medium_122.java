@@ -2,7 +2,7 @@ package medium;
 
 public class medium_122 {
     public static void main(String[] args) {
-        int[] arr={7,1,5,3,6,4};
+        int[] arr={8,7,5,4,3,2};
         System.out.println(maxProfit(arr));
     }
     public static int maxProfit(int[] prices) {
