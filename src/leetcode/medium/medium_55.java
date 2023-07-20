@@ -1,4 +1,4 @@
-package leetcode.medium;
+
 
 class Solution {
     public boolean canJump(int[] nums) {

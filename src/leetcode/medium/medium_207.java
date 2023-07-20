@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 class Solution {
     public boolean canFinish(int n, int[][] prerequisites) {
         List<Integer>[] adj = new List[n];
