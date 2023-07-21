@@ -1,4 +1,4 @@
-public class Solution {
+class Solution {
     public ListNode rev(ListNode head) {
         if (head == null)
             return null;
@@ -55,6 +55,4 @@ public class Solution {
         ListNode res = solve(l1rev, l2rev);
         return rev(res);
     }
-} {
-    
 }
