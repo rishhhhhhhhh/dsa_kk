@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 class Solution {
     public boolean hasCycle(ListNode head) {
         HashSet<ListNode> visited_nodes = new HashSet<>();
