@@ -48,7 +48,7 @@ package leetcode.medium;
 // }
 
 
-public class Solution {
+class Solution {
 	public int[] searchRange(int[] A, int target) {
 		int start = Solution.firstGreaterEqual(A, target);
 		if (start == A.length || A[start] != target) {
