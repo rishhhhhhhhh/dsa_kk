@@ -1,3 +1,4 @@
+
 class Solution {
     public int maxDotProduct(int[] nums1, int[] nums2) {
         int n = nums1.length;
@@ -9,6 +10,8 @@ class Solution {
                 memo[i][j] = Integer.MIN_VALUE;
             }
         }
+
+
         
         return dp(nums1, nums2, 0, 0, memo);
     }
